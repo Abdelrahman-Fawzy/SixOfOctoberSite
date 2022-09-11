@@ -1,0 +1,209 @@
+.welcoming .courseInfo p.welcomeMessage {
+  font-size: 30px;
+  color: #259F8B;
+}
+.welcoming .courseInfo p.welcomeMessage::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: #259F8B;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.welcoming .courseInfo .CourseName {
+  text-transform: uppercase;
+  margin: 0 0.5em;
+  font-size: 40px;
+  color: #2D2058;
+}
+.welcoming .courseInfo ul {
+  padding: 1em 1.5em;
+}
+.welcoming .courseInfo ul li {
+  color: #259F8B;
+  font-size: 25px;
+  margin-bottom: 0.5em;
+}
+.welcoming .courseInfo ul li span {
+  margin: 0 0.5em;
+}
+.welcoming .courseInfo ul li svg {
+  fill: #259F8B;
+}
+.welcoming .courseInfo .level {
+  font-size: 22px;
+  color: #2D2058;
+}
+.welcoming .courseInfo .progress .bg-success {
+  background-color: #259F8B !important;
+}
+.welcoming .welcomeSideImgs {
+  background-image: url("../assets/courses/shape.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.welcoming .welcomeSideImgs img {
+  width: 100%;
+  padding: 65px 0;
+}
+
+.courseActions {
+  /* Style the tab */
+  /* Style the tab content */
+  /* Fade in tabs */
+}
+.courseActions .tab {
+  text-align: center;
+  /* Style the buttons inside the tab */
+}
+.courseActions .tab button {
+  background-color: transparent;
+  border: 1px solid #259F8B;
+  color: #259F8B;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 16px;
+  margin: 0 10px;
+  transition: 0.3s;
+  font-size: 25px;
+  /*Changebackgroundcolorofbuttonsonhover*/
+  /* Create an active/current tablink class */
+}
+.courseActions .tab button:hover {
+  color: #fff;
+  background-color: #259F8B;
+  border-bottom: 1px solid #259F8B;
+}
+.courseActions .tab button.active {
+  color: #fff;
+  background-color: #259F8B;
+  border-bottom: 1px solid #259F8B;
+}
+.courseActions .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+.courseActions .tabcontent .card {
+  margin-bottom: 17px;
+  border: none;
+}
+.courseActions .tabcontent .card .card-header {
+  background: #fff;
+}
+.courseActions .tabcontent .card .card-header button {
+  box-shadow: none;
+  text-align: right;
+  color: #353688;
+  font-weight: bold;
+}
+.courseActions .tabcontent .card .card-body ul li {
+  color: #353688;
+  margin-bottom: 10px;
+}
+.courseActions .tabcontent .card .card-body ul li a {
+  color: #353688;
+  text-decoration: none;
+}
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.subjectsDescription .title {
+  color: #2D2058;
+  font-size: 30px;
+  font-weight: bold;
+}
+.subjectsDescription .description {
+  color: #818181;
+  font-size: 20px;
+}
+.subjectsDescription .benefits {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.subjectsDescription .benefits .benefitsBar {
+  background-color: #000;
+  height: 4px;
+}
+.subjectsDescription .benefits .benefitsData {
+  display: flex;
+  justify-content: space-between;
+}
+.subjectsDescription .benefits .benefitsData p {
+  margin-bottom: 0;
+  width: 10%;
+  font-size: 12px;
+  text-align: center;
+  color: #259F8B;
+  font-weight: bold;
+}
+.subjectsDescription .benefits .benefitsData p:nth-child(odd) {
+  position: relative;
+  bottom: 5em;
+}
+.subjectsDescription .benefits .benefitsData p:nth-child(odd)::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: #259F8B;
+  position: relative;
+  top: 4.1em;
+  right: 3.5em;
+  border-radius: 50%;
+}
+.subjectsDescription .benefits .benefitsData p:nth-child(even) {
+  position: relative;
+  top: 2em;
+}
+.subjectsDescription .benefits .benefitsData p:nth-child(even)::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: #259F8B;
+  position: relative;
+  bottom: 2.8em;
+  right: 2.5em;
+  border-radius: 50%;
+}
+
+.reviews .userInfo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+.reviews p {
+  color: #363636;
+}
+
+.contact .form {
+  background: #fff;
+  padding: 2em;
+  border-radius: 5px;
+  margin: 5em 0;
+}
+.contact .form textarea {
+  resize: none;
+}
+.contact .form img {
+  width: 60%;
+}

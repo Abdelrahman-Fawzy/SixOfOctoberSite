@@ -1,0 +1,230 @@
+nav #navbarSupportedContent .navbar-nav {
+  width: 100%;
+  justify-content: flex-end;
+  margin: 0 3em;
+}
+nav #navbarSupportedContent .navbar-nav .active {
+  font-weight: bold;
+  border-bottom: 3px solid #fff;
+}
+nav #navbarSupportedContent .navbar-nav .nav-link {
+  color: #fff;
+  padding: 0.4rem 0.5rem;
+}
+nav #navbarSupportedContent .userInfo {
+  display: flex;
+  width: 33%;
+  justify-content: space-between;
+}
+nav #navbarSupportedContent .userInfo .dropdown-toggle {
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+nav #navbarSupportedContent .userInfo .dropdown-toggle::after {
+  margin-right: 0.355em;
+}
+nav #navbarSupportedContent .userInfo .userActions {
+  text-align: right;
+}
+nav #navbarSupportedContent .userInfo .userActions a {
+  margin: 15px 0.5em;
+  display: inline-block;
+  position: relative;
+}
+nav #navbarSupportedContent .userInfo .userActions a img {
+  width: 75%;
+}
+nav #navbarSupportedContent .userInfo .userActions a span {
+  background: red;
+  color: #fff;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 1.9em;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer {
+  background-image: url("../assets/mainAssets/footer.png");
+  padding-top: 13em;
+  padding-bottom: 10em;
+  position: relative;
+}
+footer .logo img {
+  width: 60%;
+}
+footer .contact {
+  margin-top: 3em;
+}
+footer .contact p {
+  color: #fff;
+  font-size: 2.5em;
+}
+footer .contact .socialLinks i {
+  width: 25%;
+  color: #fff;
+}
+footer .anotherLinks {
+  margin-top: 7em;
+}
+footer .anotherLinks p {
+  color: #fff;
+  font-size: 2em;
+}
+footer .anotherLinks .links a {
+  display: block;
+  color: #fff;
+  margin-bottom: 1em;
+}
+footer .anotherPages {
+  margin-top: 11em;
+}
+footer .anotherPages a {
+  color: #fff;
+  display: block;
+  margin-bottom: 1em;
+}
+footer .contact-us {
+  margin-top: 7em;
+}
+footer .contact-us p {
+  color: #fff;
+  font-size: 2em;
+}
+footer .contact-us .contacts-ways {
+  color: #fff;
+}
+footer .contact-us .contacts-ways h6 {
+  margin-bottom: 1em;
+}
+footer .contact-us .contacts-ways h6 span {
+  margin: 0 10px;
+}
+footer .copyRight {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  width: 100%;
+  color: #fff;
+}
+
+body {
+  text-align: right;
+  background-color: #FAFAFA;
+  overflow-x: hidden;
+  font-family: "Cairo", sans-serif;
+}
+
+.h2Title {
+  color: #259F8B;
+  margin-bottom: 1em;
+}
+
+.mainParagraph {
+  color: #112D58;
+  line-height: 2em;
+}
+
+.mainButton {
+  background-color: #259F8B;
+  padding: 0.5em 2em;
+  border-radius: 25px;
+  color: #fff;
+  border: none;
+}
+.mainButton a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.transparentButton {
+  padding: 0.5em 2em;
+  border-radius: 25px;
+  color: #259F8B;
+  border: 1px solid #259F8B;
+  background-color: #fff;
+  margin: 0 10px;
+}
+
+.mainCard {
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+.mainCard .card-img-top {
+  width: 100%;
+  height: 19em;
+}
+.mainCard .card-body .department h4 {
+  font-size: 1.3rem;
+  color: #6EB04F;
+}
+.mainCard .card-body .subjectName p {
+  color: #112D58;
+}
+.mainCard .card-body .subjectName .rating .checked {
+  color: orange;
+}
+.mainCard .card-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  color: #fff;
+  opacity: 0.7;
+  height: 0;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+.mainCard .card-overlay .department h4 {
+  font-size: 1em;
+}
+.mainCard .card-overlay .subjectName p {
+  font-size: 0.8em;
+}
+.mainCard .card-overlay .subjectName .rating i {
+  font-size: 13px;
+}
+.mainCard .card-overlay .subjectName .rating .checked {
+  color: orange;
+}
+.mainCard .card-overlay p {
+  font-size: 0.8em;
+  line-height: 2em;
+}
+.mainCard .card-overlay .info {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+}
+.mainCard .card-overlay .info .comments,
+.mainCard .card-overlay .info .subscribers {
+  gap: 5px;
+  font-size: 18px;
+}
+.mainCard:hover .card-overlay {
+  height: 100%;
+  padding: 20px;
+}
+.mainCard:hover .card-body {
+  display: none;
+}
+
+.rating {
+  margin: 1em 0;
+}
+.rating i {
+  color: #000;
+}
+.rating .checked {
+  color: orange;
+}
+
+textarea {
+  resize: none;
+}

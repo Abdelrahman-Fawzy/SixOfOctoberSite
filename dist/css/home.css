@@ -1,0 +1,77 @@
+.welcoming {
+  background-image: url("../assets/home/homePageImg.png");
+  background-size: 65%;
+  background-repeat: no-repeat;
+}
+.welcoming .form {
+  padding: 10em 5em;
+}
+.welcoming .form p {
+  font-size: 30px;
+  color: #259F8B;
+}
+.welcoming .form p::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: #259F8B;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.welcoming .form label {
+  font-size: 40px;
+  font-weight: bold;
+}
+.welcoming .form .inputAndIcon {
+  background: #fff;
+  box-shadow: 0px 0px 8px #cbcbcb;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+.welcoming .form .inputAndIcon input {
+  border: none;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+.welcoming .form .inputAndIcon i {
+  background: #259F8B;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+.welcoming .about {
+  margin-top: 30rem;
+}
+.welcoming .about img {
+  width: 100%;
+}
+
+.subjects {
+  padding-top: 5em;
+}
+
+.stats {
+  padding-top: 5em;
+}
+.stats img {
+  width: 80%;
+}
+
+.newSubjects {
+  padding-top: 5em;
+}
+.newSubjects h2 {
+  margin: 0.5em 2em;
+}
+.newSubjects .card {
+  margin: 0.5em;
+}
+.newSubjects .card:hover {
+  height: 19em;
+}
+
+.popular-subjects {
+  padding-top: 5em;
+}

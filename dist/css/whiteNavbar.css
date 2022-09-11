@@ -1,0 +1,9 @@
+nav {
+  background-color: #fff;
+}
+nav .navbar-nav .nav-link {
+  color: #259F8B !important;
+}
+nav .userInfo .dropdown-toggle {
+  color: #259F8B !important;
+}

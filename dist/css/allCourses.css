@@ -1,0 +1,62 @@
+.welcoming {
+  background-image: url("../assets/courses/fd.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.welcoming .pageInfo {
+  padding: 10em 0;
+}
+.welcoming .pageInfo p {
+  color: #fff;
+  font-size: 25px;
+}
+.welcoming .pageInfo p.mainTitle::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.welcoming .pageInfo p.subP {
+  margin: 0 1em;
+}
+
+.courseList #myBtnContainer {
+  margin: 2em 17em;
+  text-align: center;
+  /* Style the buttons */
+}
+.courseList #myBtnContainer .btn {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 5px 16px;
+  background-color: transparent;
+  border: 1px solid #259F8B;
+  color: #259F8B;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 0.5em;
+}
+.courseList #myBtnContainer .btn:hover {
+  background-color: #259F8B;
+  color: #fff;
+}
+.courseList #myBtnContainer .btn.activeCourse {
+  background-color: #259F8B;
+  color: #fff;
+  border: 1px solid #259F8B;
+  font-weight: bold;
+}
+.courseList .filterDiv {
+  display: none;
+}
+.courseList .show {
+  display: block;
+}
+.courseList .container {
+  margin-top: 20px;
+  overflow: hidden;
+}

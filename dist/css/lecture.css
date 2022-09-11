@@ -1,0 +1,194 @@
+.welcoming .progressLevel {
+  color: #353688;
+  font-weight: bold;
+  font-size: 20px;
+}
+.welcoming .lecturesCount {
+  background: #fff;
+  padding: 1em 2em;
+}
+.welcoming .lecturesCount span {
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  display: block;
+  border-bottom: 1px solid #777;
+}
+.welcoming .lecturesCount .video_link {
+  font-size: 18px;
+}
+.welcoming .lecturesCount .video_link.viewed {
+  color: #259F8B;
+}
+.welcoming .video_link {
+  cursor: pointer;
+}
+.welcoming #progress_sprite {
+  height: 13px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 20px;
+  position: relative;
+  border: 1px solid #707070;
+}
+.welcoming #progress_sprite::before, .welcoming #progress_sprite::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #777777;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+}
+.welcoming #progress_sprite::before {
+  right: -1px;
+}
+.welcoming #progress_sprite::after {
+  left: -1px;
+}
+.welcoming #progress_sprite div {
+  background: #259F8B;
+  width: 25%;
+  margin: 0;
+  height: 13px;
+  position: relative;
+  border: 1px solid #259F8B;
+}
+.welcoming #progress_sprite div:first-child, .welcoming #progress_sprite div:last-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.welcoming #progress_sprite div::after, .welcoming #progress_sprite div:first-child:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #259F8B;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  z-index: 1;
+}
+.welcoming #progress_sprite div:first-child:before {
+  right: -3px;
+}
+.welcoming #progress_sprite div::after {
+  left: -1px;
+}
+
+.lecturesDetails {
+  /* Style the tab */
+  /* Style the tab content */
+  /* Fade in tabs */
+}
+.lecturesDetails .tab {
+  text-align: center;
+  /* Style the buttons inside the tab */
+}
+.lecturesDetails .tab button {
+  background-color: transparent;
+  color: #259F8B;
+  border: 1px solid #259F8B;
+  outline: none;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 5px 16px;
+  margin: 0 10px;
+  transition: 0.3s;
+  font-size: 25px;
+  /*Changebackgroundcolorofbuttonsonhover*/
+  /* Create an active/current tablink class */
+}
+.lecturesDetails .tab button:hover {
+  color: #fff;
+  border: 1px solid #259F8B;
+  background-color: #259F8B;
+}
+.lecturesDetails .tab button.active {
+  color: #fff;
+  border: 1px solid #259F8B;
+  background-color: #259F8B;
+}
+.lecturesDetails .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+.lecturesDetails .tabcontent .card {
+  margin-bottom: 17px;
+  border: none;
+}
+.lecturesDetails .tabcontent .card .card-header {
+  background: #fff;
+}
+.lecturesDetails .tabcontent .card .card-header button {
+  box-shadow: none;
+  text-align: right;
+  color: #353688;
+  font-weight: bold;
+}
+.lecturesDetails .tabcontent .card .card-body ul li {
+  color: #353688;
+  margin-bottom: 10px;
+}
+.lecturesDetails .table th {
+  background-color: #259F8B;
+  color: #fff;
+}
+.lecturesDetails .files {
+  background: #fff;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 20px;
+  box-shadow: 0px 0px 9px 0px #dbdbdb;
+  text-align: center;
+}
+.lecturesDetails .files .fileUpload {
+  background: #F4F8FB;
+  border: 1px dashed #C5D1E2;
+  border-radius: 20px;
+  padding: 1em;
+}
+.lecturesDetails .files .fileUpload p {
+  color: #636C80;
+  margin: 1em 0;
+}
+.lecturesDetails .files .fileUpload span {
+  display: block;
+  margin: 1em;
+  color: #93A9C3;
+}
+.lecturesDetails .files .fileUpload span::before, .lecturesDetails .files .fileUpload span::after {
+  content: "";
+  display: inline-block;
+  width: 2em;
+  height: 2px;
+  margin: 0 0.5em;
+  background-color: #93A9C3;
+}
+.lecturesDetails .files .fileUpload .uploadFile {
+  background: #259f8b;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

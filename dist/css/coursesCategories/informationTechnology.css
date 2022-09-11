@@ -1,0 +1,84 @@
+.welcoming {
+  background-image: url("../../assets/courses/sd.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.welcoming .pageInfo {
+  padding: 10em 0;
+}
+.welcoming .pageInfo p {
+  color: #fff;
+  font-size: 25px;
+}
+.welcoming .pageInfo p.mainTitle::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.welcoming .pageInfo p.subP {
+  margin: 0 1em;
+}
+
+.courseList {
+  /* Style the tab */
+  /* Style the tab content */
+}
+.courseList .tab {
+  overflow: hidden;
+  border: 1px solid #259F8B;
+  background-color: transparent;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 65%;
+  text-align: center;
+}
+.courseList .tab.firstTab {
+  float: right;
+  margin-top: 16px;
+  width: 32%;
+}
+.courseList .tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.courseList .tab button:hover {
+  color: #259F8B;
+  border-bottom: 3px solid #259F8B;
+}
+.courseList .tab button.active {
+  color: #259F8B;
+  border-bottom: 3px solid #259F8B;
+}
+.courseList .tabcontent,
+.courseList .tabTermContent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+          animation: fadeEffect 1s;
+}
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

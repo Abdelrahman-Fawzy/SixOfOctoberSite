@@ -1,0 +1,25 @@
+.welcoming {
+  background-image: url("../assets/contacts/contacts.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.welcoming .pageInfo {
+  padding: 10em 0;
+}
+.welcoming .pageInfo p {
+  color: #259F8B;
+  font-size: 35px;
+  text-align: center;
+}
+
+.contacts {
+  padding: 3em 5em;
+}
+.contacts img {
+  width: 30%;
+}
+.contacts p.title {
+  color: #259F8B;
+  font-size: 22px;
+  padding: 0 10px;
+}

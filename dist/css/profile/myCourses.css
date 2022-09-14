@@ -1,0 +1,106 @@
+.courseList h4.mainTitle {
+  margin: 2em 3em;
+}
+.courseList #myBtnContainer {
+  margin: 2em 0em;
+  text-align: center;
+  /* Style the buttons */
+}
+.courseList #myBtnContainer .btn {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 5px 16px;
+  background-color: transparent;
+  border: 1px solid #259F8B;
+  color: #259F8B;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 0.5em;
+}
+.courseList #myBtnContainer .btn:hover {
+  background-color: #259F8B;
+  color: #fff;
+}
+.courseList #myBtnContainer .btn.activeCourse {
+  background-color: #259F8B;
+  color: #fff;
+  border: 1px solid #259F8B;
+  font-weight: bold;
+}
+.courseList .filterDiv {
+  display: none;
+}
+.courseList .show {
+  display: block;
+}
+.courseList .container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.schedules {
+  padding: 3em 4em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.schedules .table th {
+  background-color: #259F8B;
+  color: #fff;
+}
+
+.walletDetails, .resultsDetails {
+  /* Style the tab content */
+}
+.walletDetails .tab, .resultsDetails .tab {
+  /* Style the buttons inside the tab */
+}
+.walletDetails .tab .tablinks, .resultsDetails .tab .tablinks {
+  background-color: transparent;
+  color: #259F8B;
+  border: 1px solid #259F8B;
+  outline: none;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 5px 16px;
+  margin: 0 10px;
+  transition: 0.3s;
+  font-size: 18px;
+  /*Changebackgroundcolorofbuttonsonhover*/
+  /* Create an active/current tablink class */
+}
+.walletDetails .tab .tablinks:hover, .resultsDetails .tab .tablinks:hover {
+  color: #fff;
+  border: 1px solid #259F8B;
+  background-color: #259F8B;
+}
+.walletDetails .tab .tablinks.active, .resultsDetails .tab .tablinks.active {
+  color: #fff;
+  border: 1px solid #259F8B;
+  background-color: #259F8B;
+}
+.walletDetails .tab .addPriceBtn img, .resultsDetails .tab .addPriceBtn img {
+  margin: 0 0.6em;
+}
+.walletDetails .tab .addPriceBtn button, .resultsDetails .tab .addPriceBtn button {
+  background: transparent;
+  border: none;
+  color: #259F8B;
+}
+.walletDetails .tabcontent, .resultsDetails .tabcontent {
+  display: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  padding: 3em 4em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 3em;
+}
+.walletDetails .table th, .resultsDetails .table th {
+  background-color: #259F8B;
+  color: #fff;
+}
+.walletDetails .grade, .resultsDetails .grade {
+  text-align: center;
+  width: 15%;
+}

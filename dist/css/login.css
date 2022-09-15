@@ -1,0 +1,39 @@
+.login {
+  background-image: url("../assets/mainAssets/login.png");
+  background-size: 100% 105%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.login form {
+  width: 40%;
+  background-color: #fff;
+  padding: 3em 5em;
+  border-radius: 28px;
+}
+.login form .logo {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.login form .form-group {
+  margin-bottom: 1.5em;
+}
+.login form .form-group label {
+  color: #259F8B;
+}
+.login form .form-group input {
+  border: none;
+  outline: none;
+  background: #f1f4fa;
+  color: #06152b;
+  direction: ltr;
+}
+.login form .loginUser {
+  background-color: #259F8B;
+  color: #fff;
+  padding: 9px;
+  margin-top: 3em;
+}
+.login form .loginVisitor {
+  color: #259F8B;
+}

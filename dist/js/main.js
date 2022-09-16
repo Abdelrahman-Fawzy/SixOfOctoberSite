@@ -1,3 +1,4 @@
+
 $(function () {
   $('.slider-container').slick({
     infinite: true,
@@ -50,7 +51,6 @@ function openTerm(evt, cityName) {
 }
 
 document.getElementById("defaultOpens").click();
-console.log(document.getElementById("defaultOpens"));
 document.getElementById("defaultTermOpen").click();
 
 filterSelection("all")
@@ -100,4 +100,15 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" activeCourse", "");
     this.className += " activeCourse";
   });
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpens").click();
+
+
+function toggleCollapsedNotes() {
+  let collapsedNotes = document.getElementById('collapsedNotes');
+  let notCollapsedNotes = document.getElementById('notCollapsedNotes');
+  collapsedNotes.classList.toggle('collapsed')
+  notCollapsedNotes.classList.toggle('collapsed')
 }

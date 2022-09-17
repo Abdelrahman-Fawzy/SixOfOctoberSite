@@ -102,13 +102,5 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpens").click();
 
 
-function toggleCollapsedNotes() {
-  let collapsedNotes = document.getElementById('collapsedNotes');
-  let notCollapsedNotes = document.getElementById('notCollapsedNotes');
-  collapsedNotes.classList.toggle('collapsed')
-  notCollapsedNotes.classList.toggle('collapsed')
-}

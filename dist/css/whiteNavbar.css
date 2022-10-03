@@ -1,5 +1,6 @@
 nav {
   background-color: #fff;
+  z-index: 2;
 }
 nav .navbar-nav .nav-link {
   color: #259F8B !important;

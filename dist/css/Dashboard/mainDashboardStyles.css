@@ -19,6 +19,42 @@ button.add svg {
   margin-bottom: 3px;
 }
 
+button.primary {
+  padding: 5px 25px;
+  border-radius: 24px;
+  margin: 0 10px;
+  border: 1px solid #259F8B;
+  font-weight: 500;
+  background-color: #259F8B;
+  color: #fff;
+}
+
+.table th {
+  background-color: #259F8B;
+  color: #fff;
+}
+
+.dropdown-item {
+  text-align: right;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .page {
   display: flex;
   justify-content: flex-end;
@@ -261,4 +297,108 @@ button.add svg {
 .page .content-area .comments .comment p {
   color: #363636;
   font-size: 14px;
+}
+.page .content-area .pageBreadCrumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .content-area .pageBreadCrumb ul.breadcrumb {
+  margin: 0;
+  background: transparent;
+}
+.page .content-area .pageBreadCrumb ul.breadcrumb li {
+  font-size: 18px;
+  color: #259F8B;
+}
+.page .content-area .pageBreadCrumb ul.breadcrumb li a {
+  color: #259F8B;
+  text-decoration: none;
+  font-weight: 600;
+}
+.page .content-area .pageBreadCrumb ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: #259F8B;
+  content: ">";
+}
+.page .content-area .pageBreadCrumb .pageBreadCrumbActions button.tabLink {
+  padding: 5px 25px;
+  border-radius: 24px;
+  margin: 0 10px;
+  border: 1px solid #259F8B;
+  font-weight: 500;
+  background-color: transparent;
+  color: #259F8B;
+}
+.page .content-area .pageBreadCrumb .pageBreadCrumbActions button.tabLink.activeTab, .page .content-area .pageBreadCrumb .pageBreadCrumbActions button.tabLink:hover {
+  background-color: #259F8B;
+  color: #fff;
+}
+.page .content-area .pageBreadCrumb .pageBreadCrumbSearch .form-group {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin: 0;
+  background: #EAEAEA;
+  padding: 0px 10px;
+  border-radius: 20px;
+}
+.page .content-area .pageBreadCrumb .pageBreadCrumbSearch .form-group img {
+  width: 15px;
+}
+.page .content-area .pageBreadCrumb .pageBreadCrumbSearch .form-group input {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 0.8rem;
+  color: #259F8B;
+}
+.page .content-area .pageBreadCrumb .pageBreadCrumbSearch .form-group ::-moz-placeholder {
+  color: #259F8B;
+}
+.page .content-area .pageBreadCrumb .pageBreadCrumbSearch .form-group ::placeholder {
+  color: #259F8B;
+}
+.page .content-area .pageContent {
+  background: #fff;
+  margin-top: 2em;
+  padding: 2em;
+  box-shadow: 0px 0px 5px 0px #ddd;
+  border-radius: 5px;
+}
+.page .content-area .pageContent .contents {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+.page .content-area .pageContent h4.title {
+  margin-bottom: 1em;
+  color: #259F8B;
+}
+.page .content-area .pageContent form label {
+  font-size: 16px;
+  margin-bottom: 1em;
+  color: #363636;
+}
+.page .content-area .pageContent form input {
+  border: none;
+  background-color: #F1F4FA;
+  color: #06152B;
+  font-size: 0.8rem;
+  outline: none;
+  box-shadow: none;
+}
+.page .content-area .pageContent button.editContent {
+  background-color: #259F8B;
+  color: #fff;
+  border: none;
+  display: block;
+  margin: auto;
+  padding: 7px 3em;
+}
+.page .content-area .pageContent hr {
+  margin: 0 0 30px;
+  border-top: 3px solid #67b445;
+  width: 50px;
 }

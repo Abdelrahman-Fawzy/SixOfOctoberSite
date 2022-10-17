@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/libs/all.min.css">
+    <link rel="stylesheet" href="../../css/libs/fontawesome.min.css">
+    <link rel="stylesheet" href="../../css/Main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/Dashboard/mainDashboardStyles.css">
+    <link rel="stylesheet" href="../../css/whiteNavbar.css">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" href="../home.html"><img src="../../assets/mainAssets/logo.svg" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="../home.html">الرئيسية<span class="sr-only">(current)</span></a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">الأقسام الدراسية</a>
+            <div class="dropdown-menu"><a class="dropdown-item" href="../coursesCategories/informationTechnologies.html">تكنولوجيا المعلومات</a><a class="dropdown-item" href="#">مساحة وخرائط</a><a class="dropdown-item" href="#">خدمات طبية</a><a class="dropdown-item" href="#">خدمات بترولية</a><a class="dropdown-item" href="#">سياحة وفنادق</a><a class="dropdown-item" href="#">صحافة و إعلام</a><a class="dropdown-item" href="#">إدارة اعمال</a></div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../allCourses.html">المقررات الدراسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="../contact.html">اتصل بنا</a></li>
+        </ul>
+        <div class="userInfo">
+          <div class="userImg"><img src="../../assets/mainAssets/user.svg" alt="user"></div>
+          <div class="userData">
+            <div class="dropdown">
+              <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">عبدالرحمن محمد فوزي احمد</button>
+              <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+            </div>
+            <p class="email">abdelrahmanawzy98@gmail.com</p>
+            <div class="userActions"><a href="#"><img src="../../assets/mainAssets/notifiction.svg" alt="notifiction"><span>2</span></a><a href="#"><img src="../../assets/mainAssets/R.svg" alt="messages"><span>2</span></a></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="page dashboard-page">
+      <div class="sidebar">
+        <ul class="list-unstyled mt-5">
+          <li><a href="dashboard.html"> 
+              <svg id="Group_16375" data-name="Group 16375" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                <path id="Path_10434" data-name="Path 10434" d="M0,0H24V24H0Z" fill="none"></path>
+                <path id="Path_10435" data-name="Path 10435" d="M4,4h6v8H4Z" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                <path id="Path_10436" data-name="Path 10436" d="M4,16h6v4H4Z" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                <path id="Path_10437" data-name="Path 10437" d="M14,12h6v8H14Z" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                <path id="Path_10438" data-name="Path 10438" d="M14,4h6V8H14Z" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>لوحة المعلومات</a></li>
+          <li>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span>
+                        <svg id="Group_16376" data-name="Group 16376" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                          <path id="Path_10439" data-name="Path 10439" d="M0,0H24V24H0Z" fill="none"></path>
+                          <path id="Path_10440" data-name="Path 10440" d="M10.325,4.317a1.724,1.724,0,0,1,3.35,0,1.724,1.724,0,0,0,2.573,1.066,1.725,1.725,0,0,1,2.37,2.37,1.724,1.724,0,0,0,1.065,2.572,1.724,1.724,0,0,1,0,3.35,1.724,1.724,0,0,0-1.066,2.573,1.725,1.725,0,0,1-2.37,2.37,1.724,1.724,0,0,0-2.572,1.065,1.724,1.724,0,0,1-3.35,0,1.724,1.724,0,0,0-2.573-1.066,1.725,1.725,0,0,1-2.37-2.37,1.724,1.724,0,0,0-1.065-2.572,1.724,1.724,0,0,1,0-3.35A1.724,1.724,0,0,0,5.383,7.752a1.725,1.725,0,0,1,2.37-2.37,1.723,1.723,0,0,0,2.572-1.065Z" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                          <circle id="Ellipse_219" data-name="Ellipse 219" cx="3" cy="3" r="3" transform="translate(9 9)" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+                        </svg>إدارة الموقع</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13.503" height="15.616" viewbox="0 0 13.503 23.616">
+                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M18,20.679l8.93-8.937a1.681,1.681,0,0,1,2.384,0,1.7,1.7,0,0,1,0,2.391L19.2,24.258a1.685,1.685,0,0,1-2.327.049L6.68,14.14a1.688,1.688,0,0,1,2.384-2.391Z" transform="translate(24.749 -6.188) rotate(90)" fill="#363636"></path>
+                      </svg>
+                    </button>
+                  </h2>
+                </div>
+                <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-unstyled">
+                      <li> <a href="homePageContent.html">محتوى الصفحة الرئيسية</a></li>
+                      <li> <a href="siteSettings.html">إعدادات الموقع</a></li>
+                      <li> <a href="news.html">النشرة الاخبارية</a></li>
+                      <li> <a href="userManagement.html">إدارة المستخدمين</a></li>
+                      <li> <a href="userGroup.html">مجموعة المستخدمين</a></li>
+                      <li> <a href="addUserGroup.html">إضافة مجموعات مستخدمين</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="#"> 
+              <svg id="Group_16377" data-name="Group 16377" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                <path id="Path_10441" data-name="Path 10441" d="M0,0H24V24H0Z" fill="none"></path>
+                <path id="Path_10442" data-name="Path 10442" d="M4,4h6v6H4Z" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                <path id="Path_10443" data-name="Path 10443" d="M14,4h6v6H14Z" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                <path id="Path_10444" data-name="Path 10444" d="M4,14h6v6H4Z" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                <circle id="Ellipse_220" data-name="Ellipse 220" cx="3" cy="3" r="3" transform="translate(14 14)" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+              </svg>الأقسام الدراسية</a></li>
+          <li><a href="subjectsManagement.html"> 
+              <svg id="Group_16378" data-name="Group 16378" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                <path id="Path_10445" data-name="Path 10445" d="M0,0H24V24H0Z" fill="none"></path>
+                <path id="Path_10446" data-name="Path 10446" d="M22,9,12,5,2,9l10,4L22,9v6" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                <path id="Path_10447" data-name="Path 10447" d="M6,10.6V16c0,1.657,2.686,3,6,3s6-1.343,6-3V10.6" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>إدارة المقررات الدراسية</a></li>
+          <li>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span>
+                        <svg id="Group_16380" data-name="Group 16380" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                          <path id="Path_10451" data-name="Path 10451" d="M0,0H24V24H0Z" fill="none"></path>
+                          <rect id="Rectangle_17456" data-name="Rectangle 17456" width="14" height="18" rx="2" transform="translate(5 3)" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></rect>
+                          <line id="Line_20" data-name="Line 20" x2="6" transform="translate(9 7)" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
+                          <line id="Line_21" data-name="Line 21" x2="6" transform="translate(9 11)" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
+                          <line id="Line_22" data-name="Line 22" x2="4" transform="translate(9 15)" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
+                        </svg>إدارة الامتحانات</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13.503" height="15.616" viewbox="0 0 13.503 23.616">
+                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M18,20.679l8.93-8.937a1.681,1.681,0,0,1,2.384,0,1.7,1.7,0,0,1,0,2.391L19.2,24.258a1.685,1.685,0,0,1-2.327.049L6.68,14.14a1.688,1.688,0,0,1,2.384-2.391Z" transform="translate(24.749 -6.188) rotate(90)" fill="#363636"></path>
+                      </svg>
+                    </button>
+                  </h2>
+                </div>
+                <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-unstyled">
+                      <li> <a href="#">test</a></li>
+                      <li> <a href="#">test</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="#"> 
+              <svg id="Group_16381" data-name="Group 16381" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                <path id="Path_10452" data-name="Path 10452" d="M0,0H24V24H0Z" fill="none"></path>
+                <path id="Path_10453" data-name="Path 10453" d="M12,20,9,17H7a3,3,0,0,1-3-3V8A3,3,0,0,1,7,5H17a3,3,0,0,1,3,3v6a3,3,0,0,1-3,3H15l-3,3" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                <line id="Line_23" data-name="Line 23" x2="8" transform="translate(8 9)" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
+                <line id="Line_24" data-name="Line 24" x2="6" transform="translate(8 13)" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
+              </svg>إدارة التعليقات</a></li>
+          <li><a href="#"> 
+              <svg id="Group_16379" data-name="Group 16379" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                <path id="Path_10448" data-name="Path 10448" d="M0,0H24V24H0Z" fill="none"></path>
+                <circle id="Ellipse_221" data-name="Ellipse 221" cx="3" cy="3" r="3" transform="translate(12 12)" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+                <path id="Path_10449" data-name="Path 10449" d="M13,17.5V22l2-1.5L17,22V17.5" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                <path id="Path_10450" data-name="Path 10450" d="M10,19H5a2,2,0,0,1-2-2V7A2.006,2.006,0,0,1,5,5H19a2,2,0,0,1,2,2V17a2,2,0,0,1-1,1.73" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                <line id="Line_17" data-name="Line 17" x2="12" transform="translate(6 9)" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
+                <line id="Line_18" data-name="Line 18" x2="3" transform="translate(6 12)" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
+                <line id="Line_19" data-name="Line 19" x2="2" transform="translate(6 15)" fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
+              </svg>النتائج</a></li>
+        </ul>
+        <div class="final-frame d-flex justify-content-center"><img src="../../assets/dashboard/sidebarMan.png" alt=""></div>
+      </div>
+      <div class="content-area">
+        <div class="breadCrumb">
+          <div class="breadCrumb__PageName">
+            <p>إدارة المقررات الدراسية</p>
+          </div>
+          <div class="breadCrumb__pageActions">
+            <button class="primaryAction">إضافة مقرر دراسى جديد</button>
+            <input class="form-control" type="text" placeholder="بحث">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/slick.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="../../js/main.js"></script>
+  </body>
+</html>

@@ -102,5 +102,17 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-
-
+function openTab(evt, tabName) {
+  let i, contents, tabLink;
+  contents = document.getElementsByClassName("contents");
+  for (i = 0; i < contents.length; i++) {
+    contents[i].style.display = "none";
+  }
+  tabLink = document.getElementsByClassName("tabLink");
+  for (i = 0; i < tabLink.length; i++) {
+    tabLink[i].className = tabLink[i].className.replace(" activeTab", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " activeTab";
+}
+document.getElementById("open").click();

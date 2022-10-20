@@ -18,6 +18,13 @@ $(function () {
       //needed for progress bar.
     }
   });
+
+  $('#maleStudents').DataTable({
+    ordering,
+    scrollY: 300,
+    paging: true,
+    searching: true,
+  });
 });
 
 

@@ -5,189 +5,289 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
     <link rel="stylesheet" href="../../css/libs/fontawesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/notes/notesPages.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
     <title>Students Affair</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script>
+      $(document).ready(function () {
+      $('#maleStudents').DataTable({
+        paging: true,
+        searching: false,
+        lengthChange: false
+      });
+      });
+    </script>
   </head>
-  <div class="page">
-    <div class="sidebar">
-      <div class="logo"> <img src="../../assets/mainAssets/logo.svg" alt=""></div>
-      <div class="sidebar__items">
-        <ul class="list-unstyled"> 
-          <li class="active"> <a href="#"> 
-              <svg id="Home" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewbox="0 0 19 20">
-                <path id="Home-2" data-name="Home" d="M12.365,18.773V15.716A1.419,1.419,0,0,0,10.942,14.3H8.067a1.429,1.429,0,0,0-1.007.414,1.408,1.408,0,0,0-.417,1v3.058a1.213,1.213,0,0,1-.356.867,1.231,1.231,0,0,1-.871.36H3.456a3.46,3.46,0,0,1-2.443-1A3.41,3.41,0,0,1,0,16.578V7.867a2.473,2.473,0,0,1,.9-1.9L7.566.676a3.1,3.1,0,0,1,3.949.071l6.518,5.218A2.474,2.474,0,0,1,19,7.867v8.7A3.444,3.444,0,0,1,15.544,20H13.628a1.231,1.231,0,0,1-1.236-1.218Z" fill="#abb5ba"></path>
-              </svg><span>لوحة التحكم</span></a></li>
-          <li> <a href="#"> 
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewbox="0 0 20 20">
-                <g id="Iconly_Bold_Category" data-name="Iconly/Bold/Category" transform="translate(0 0)">
-                  <g id="Category" transform="translate(0 0)">
-                    <path id="Category-2" data-name="Category" d="M14.081,20a2.548,2.548,0,0,1-2.541-2.56V14.031a2.543,2.543,0,0,1,2.541-2.561h3.38A2.549,2.549,0,0,1,20,14.031V17.44A2.554,2.554,0,0,1,17.46,20ZM2.54,20A2.555,2.555,0,0,1,0,17.44V14.031A2.549,2.549,0,0,1,2.54,11.47H5.92a2.542,2.542,0,0,1,2.54,2.561V17.44A2.548,2.548,0,0,1,5.92,20ZM14.081,8.53a2.542,2.542,0,0,1-2.541-2.56V2.561A2.549,2.549,0,0,1,14.081,0h3.38A2.554,2.554,0,0,1,20,2.561V5.971a2.548,2.548,0,0,1-2.54,2.56ZM2.54,8.53A2.548,2.548,0,0,1,0,5.971V2.561A2.555,2.555,0,0,1,2.54,0H5.92A2.548,2.548,0,0,1,8.46,2.561V5.971A2.541,2.541,0,0,1,5.92,8.53Z" fill="#abb5ba"></path>
+  <body> 
+    <div class="page">
+      <div class="sidebar">
+        <div class="logo"> <img src="../../assets/mainAssets/logo.svg" alt=""></div>
+        <div class="sidebar__items">
+          <ul class="list-unstyled"> 
+            <li class="active"> <a href="#"> 
+                <svg id="Home" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewbox="0 0 19 20">
+                  <path id="Home-2" data-name="Home" d="M12.365,18.773V15.716A1.419,1.419,0,0,0,10.942,14.3H8.067a1.429,1.429,0,0,0-1.007.414,1.408,1.408,0,0,0-.417,1v3.058a1.213,1.213,0,0,1-.356.867,1.231,1.231,0,0,1-.871.36H3.456a3.46,3.46,0,0,1-2.443-1A3.41,3.41,0,0,1,0,16.578V7.867a2.473,2.473,0,0,1,.9-1.9L7.566.676a3.1,3.1,0,0,1,3.949.071l6.518,5.218A2.474,2.474,0,0,1,19,7.867v8.7A3.444,3.444,0,0,1,15.544,20H13.628a1.231,1.231,0,0,1-1.236-1.218Z" fill="#abb5ba"></path>
+                </svg><span>لوحة التحكم</span></a></li>
+            <li> <a href="#"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewbox="0 0 20 20">
+                  <g id="Iconly_Bold_Category" data-name="Iconly/Bold/Category" transform="translate(0 0)">
+                    <g id="Category" transform="translate(0 0)">
+                      <path id="Category-2" data-name="Category" d="M14.081,20a2.548,2.548,0,0,1-2.541-2.56V14.031a2.543,2.543,0,0,1,2.541-2.561h3.38A2.549,2.549,0,0,1,20,14.031V17.44A2.554,2.554,0,0,1,17.46,20ZM2.54,20A2.555,2.555,0,0,1,0,17.44V14.031A2.549,2.549,0,0,1,2.54,11.47H5.92a2.542,2.542,0,0,1,2.54,2.561V17.44A2.548,2.548,0,0,1,5.92,20ZM14.081,8.53a2.542,2.542,0,0,1-2.541-2.56V2.561A2.549,2.549,0,0,1,14.081,0h3.38A2.554,2.554,0,0,1,20,2.561V5.971a2.548,2.548,0,0,1-2.54,2.56ZM2.54,8.53A2.548,2.548,0,0,1,0,5.971V2.561A2.555,2.555,0,0,1,2.54,0H5.92A2.548,2.548,0,0,1,8.46,2.561V5.971A2.541,2.541,0,0,1,5.92,8.53Z" fill="#abb5ba"></path>
+                    </g>
                   </g>
-                </g>
-              </svg><span>الاستقبال</span></a></li>
-          <li> <a href="#"> <img src="../../assets/notes/students-cap.svg" alt=""><span>لوحة التحكم</span></a></li>
+                </svg><span>الاستقبال</span></a></li>
+            <li> <a href="#"> <img src="../../assets/notes/students-cap.svg" alt=""><span>لوحة التحكم</span></a></li>
+          </ul>
+        </div>
+        <div class="sidebar__finalFrame"><img src="../../assets/mainAssets/Frame.png" alt=""></div>
+      </div>
+      <div class="content-area"> 
+        <div class="navbar">
+          <div class="user">
+            <div class="userInfo">
+              <div class="userData">
+                <div class="dropdown">
+                  <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">عبدالرحمن محمد فوزي احمد</button>
+                  <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                </div>
+                <p class="email">abdelrahmanawzy98@gmail.com</p>
+              </div><img src="../../assets/mainAssets/user.svg" alt="">
+            </div>
+            <div class="userNotifications"><img src="../../assets/notes/Notification.png" alt=""><span></span></div>
+          </div>
+          <div class="actions">
+            <div class="lang">en</div>
+            <div class="notes">Note</div>
+          </div>
+        </div>
+        <ul class="breadcrumb">
+          <li><a href="#">شئون الطلاب</a></li>
+          <li><a href="#">الطلاب</a></li>
         </ul>
-      </div>
-      <div class="sidebar__finalFrame"><img src="../../assets/mainAssets/Frame.png" alt=""></div>
-    </div>
-    <div class="content-area"> 
-      <div class="navbar">
-        <div class="user">
-          <div class="userInfo">
-            <div class="userData">
-              <div class="dropdown">
-                <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">عبدالرحمن محمد فوزي احمد</button>
-                <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+        <div class="searchArea">
+          <form>
+            <div class="row align-items-center">
+              <div class="col-md-3"> 
+                <div class="form-group">
+                  <label for="studentName">اسم الطالب</label>
+                  <input class="form-control" id="studentName" type="text" placeholder="عبدالرحمن محمد فوزي احمد">
+                </div>
               </div>
-              <p class="email">abdelrahmanawzy98@gmail.com</p>
-            </div><img src="../../assets/mainAssets/user.svg" alt="">
-          </div>
-          <div class="userNotifications"><img src="../../assets/notes/Notification.png" alt=""><span></span></div>
+              <div class="col-md-3"> 
+                <div class="form-group">
+                  <label for="studentCode">كود الطالب</label>
+                  <input class="form-control" id="studentCode" type="number" placeholder="0123456789">
+                </div>
+              </div>
+              <div class="col-md-3"> 
+                <div class="form-group">
+                  <label for="NID">الرقم القومي</label>
+                  <input class="form-control" id="NID" type="number" placeholder="123456789">
+                </div>
+              </div>
+              <div class="col-md-3"> 
+                <button class="btn btn-primary" type="submit">بحث</button>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="actions">
-          <div class="lang">en</div>
-          <div class="notes">Note</div>
+        <div class="table-responsive mt-4">
+          <table class="table" id="maleStudents">
+            <thead>
+              <tr>
+                <th scope="col"><span>الصورة</span></th>
+                <th scope="col"> <span>اسم الطالب</span></th>
+                <th scope="col"> <span>الكود</span></th>
+                <th scope="col"><span>الرقم القومي</span></th>
+                <th scope="col"> <span>الفرع</span></th>
+                <th scope="col"> <span>القسم</span></th>
+                <th scope="col"><span>السنة الدراسية</span></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr> 
+                <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
+                <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
+                <td>1234567</td>
+                <td>1234567</td>
+                <td>فرع الهرم</td>
+                <td>مساحة و خرائط</td>
+                <td>2022</td>
+                <td> 
+                  <button class="more">...</button>
+                </td>
+              </tr>
+              <tr> 
+                <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
+                <td>سعبدالرحمن محمد فوزي احمد (مقيد)</td>
+                <td>1234567</td>
+                <td>1234567</td>
+                <td>فرع الهرم</td>
+                <td>مساحة و خرائط</td>
+                <td>2022</td>
+                <td> 
+                  <button class="more">...</button>
+                </td>
+              </tr>
+              <tr> 
+                <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
+                <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
+                <td>1234567</td>
+                <td>1234567</td>
+                <td>فرع الهرم</td>
+                <td>مساحة و خرائط</td>
+                <td>2022</td>
+                <td> 
+                  <button class="more">...</button>
+                </td>
+              </tr>
+              <tr> 
+                <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
+                <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
+                <td>1234567</td>
+                <td>1234567</td>
+                <td>فرع الهرم</td>
+                <td>مساحة و خرائط</td>
+                <td>2022</td>
+                <td> 
+                  <button class="more">...</button>
+                </td>
+              </tr>
+              <tr> 
+                <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
+                <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
+                <td>1234567</td>
+                <td>1234567</td>
+                <td>فرع الهرم</td>
+                <td>مساحة و خرائط</td>
+                <td>2022</td>
+                <td> 
+                  <button class="more">...</button>
+                </td>
+              </tr>
+              <tr> 
+                <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
+                <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
+                <td>1234567</td>
+                <td>1234567</td>
+                <td>فرع الهرم</td>
+                <td>مساحة و خرائط</td>
+                <td>2022</td>
+                <td> 
+                  <button class="more">...</button>
+                </td>
+              </tr>
+              <tr> 
+                <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
+                <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
+                <td>1234567</td>
+                <td>1234567</td>
+                <td>فرع الهرم</td>
+                <td>مساحة و خرائط</td>
+                <td>2022</td>
+                <td> 
+                  <button class="more">...</button>
+                </td>
+              </tr>
+              <tr> 
+                <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
+                <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
+                <td>1234567</td>
+                <td>1234567</td>
+                <td>فرع الهرم</td>
+                <td>مساحة و خرائط</td>
+                <td>2022</td>
+                <td> 
+                  <button class="more">...</button>
+                </td>
+              </tr>
+              <tr> 
+                <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
+                <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
+                <td>1234567</td>
+                <td>1234567</td>
+                <td>فرع الهرم</td>
+                <td>مساحة و خرائط</td>
+                <td>2022</td>
+                <td> 
+                  <button class="more">...</button>
+                </td>
+              </tr>
+              <tr> 
+                <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
+                <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
+                <td>1234567</td>
+                <td>1234567</td>
+                <td>فرع الهرم</td>
+                <td>مساحة و خرائط</td>
+                <td>2022</td>
+                <td> 
+                  <button class="more">...</button>
+                </td>
+              </tr>
+              <tr> 
+                <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
+                <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
+                <td>1234567</td>
+                <td>1234567</td>
+                <td>فرع الهرم</td>
+                <td>مساحة و خرائط</td>
+                <td>2022</td>
+                <td> 
+                  <button class="more">...</button>
+                </td>
+              </tr>
+              <tr> 
+                <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
+                <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
+                <td>1234567</td>
+                <td>1234567</td>
+                <td>فرع الهرم</td>
+                <td>مساحة و خرائط</td>
+                <td>2022</td>
+                <td> 
+                  <button class="more">...</button>
+                </td>
+              </tr>
+              <tr> 
+                <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
+                <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
+                <td>1234567</td>
+                <td>1234567</td>
+                <td>فرع الهرم</td>
+                <td>مساحة و خرائط</td>
+                <td>2022</td>
+                <td> 
+                  <button class="more">...</button>
+                </td>
+              </tr>
+              <tr> 
+                <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
+                <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
+                <td>1234567</td>
+                <td>1234567</td>
+                <td>فرع الهرم</td>
+                <td>مساحة و خرائط</td>
+                <td>2022</td>
+                <td> 
+                  <button class="more">...</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <ul class="breadcrumb">
-        <li><a href="#">شئون الطلاب</a></li>
-        <li><a href="#">الطلاب</a></li>
-      </ul>
-      <div class="searchArea">
-        <form>
-          <div class="row align-items-center">
-            <div class="col-md-3"> 
-              <div class="form-group">
-                <label for="studentName">اسم الطالب</label>
-                <input class="form-control" id="studentName" type="text" placeholder="عبدالرحمن محمد فوزي احمد">
-              </div>
-            </div>
-            <div class="col-md-3"> 
-              <div class="form-group">
-                <label for="studentCode">كود الطالب</label>
-                <input class="form-control" id="studentCode" type="number" placeholder="0123456789">
-              </div>
-            </div>
-            <div class="col-md-3"> 
-              <div class="form-group">
-                <label for="NID">الرقم القومي</label>
-                <input class="form-control" id="NID" type="number" placeholder="123456789">
-              </div>
-            </div>
-            <div class="col-md-3"> 
-              <button class="btn btn-primary" type="submit">بحث</button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="table-responsive mt-4">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">
-                <div class="thAndSorting">الصورة
-                  <div class="TableSort">
-                    <button class="sortUp"><img src="../../assets/notes/SortUp.png" alt=""></button>
-                    <button class="sortDown"> <img src="../../assets/notes/SortDown.png" alt=""></button>
-                  </div>
-                </div>
-              </th>
-              <th scope="col"> 
-                <div class="thAndSorting">اسم الطالب
-                  <div class="TableSort">
-                    <button class="sortUp"><img src="../../assets/notes/SortUp.png" alt=""></button>
-                    <button class="sortDown"> <img src="../../assets/notes/SortDown.png" alt=""></button>
-                  </div>
-                </div>
-              </th>
-              <th scope="col"> 
-                <div class="thAndSorting">الكود
-                  <div class="TableSort">
-                    <button class="sortUp"><img src="../../assets/notes/SortUp.png" alt=""></button>
-                    <button class="sortDown"> <img src="../../assets/notes/SortDown.png" alt=""></button>
-                  </div>
-                </div>
-              </th>
-              <th scope="col">
-                <div class="thAndSorting">الرقم القومي
-                  <div class="TableSort">
-                    <button class="sortUp"><img src="../../assets/notes/SortUp.png" alt=""></button>
-                    <button class="sortDown"> <img src="../../assets/notes/SortDown.png" alt=""></button>
-                  </div>
-                </div>
-              </th>
-              <th scope="col"> 
-                <div class="thAndSorting">الفرع
-                  <div class="TableSort">
-                    <button class="sortUp"><img src="../../assets/notes/SortUp.png" alt=""></button>
-                    <button class="sortDown"> <img src="../../assets/notes/SortDown.png" alt=""></button>
-                  </div>
-                </div>
-              </th>
-              <th scope="col"> 
-                <div class="thAndSorting">القسم
-                  <div class="TableSort">
-                    <button class="sortUp"><img src="../../assets/notes/SortUp.png" alt=""></button>
-                    <button class="sortDown"> <img src="../../assets/notes/SortDown.png" alt=""></button>
-                  </div>
-                </div>
-              </th>
-              <th scope="col">
-                <div class="thAndSorting">السنة الدراسية
-                  <div class="TableSort">
-                    <button class="sortUp"><img src="../../assets/notes/SortUp.png" alt=""></button>
-                    <button class="sortDown"> <img src="../../assets/notes/SortDown.png" alt=""></button>
-                  </div>
-                </div>
-              </th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr> 
-              <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
-              <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
-              <td>1234567</td>
-              <td>1234567</td>
-              <td>فرع الهرم</td>
-              <td>مساحة و خرائط</td>
-              <td>2022</td>
-              <td> 
-                <button class="more">...</button>
-              </td>
-            </tr>
-            <tr> 
-              <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
-              <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
-              <td>1234567</td>
-              <td>1234567</td>
-              <td>فرع الهرم</td>
-              <td>مساحة و خرائط</td>
-              <td>2022</td>
-              <td> 
-                <button class="more">...</button>
-              </td>
-            </tr>
-            <tr> 
-              <td> <img src="../../assets/mainAssets/user.svg" alt=""></td>
-              <td>عبدالرحمن محمد فوزي احمد (مقيد)</td>
-              <td>1234567</td>
-              <td>1234567</td>
-              <td>فرع الهرم</td>
-              <td>مساحة و خرائط</td>
-              <td>2022</td>
-              <td> 
-                <button class="more">...</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </div>
-  </div>
-  <script src="../../js/jquery-3.5.1.min.js"></script>
-  <script src="../../js/bootstrap.bundle.min.js"></script>
-  <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/main.js"></script>
+  </body>
 </html>

@@ -148,94 +148,121 @@
       <div class="content-area">
         <div class="pageBreadCrumb">
           <ul class="breadcrumb">
-            <li><a href="#">إدارة الموقع</a></li>
-            <li>اعدادات الموقع</li>
+            <li><a href="#">إدارة التعليقات</a></li>
           </ul>
         </div>
-        <div class="pageContent">
-          <h5>ادارة محتوي من نحن</h5>
-          <hr>
-          <div class="form-group">
-            <label for="status">حالة من نحن <span class="required text-danger">*</span></label>
-            <select class="form-control" id="status">
-              <option>Active</option>
-              <option>InActive</option>
-            </select>
+        <div class="tab mb-3">
+          <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'waiting')">انتظار (3)</button>
+          <button class="tablinks" onclick="openCity(event, 'accepted')">موافقة</button>
+          <button class="tablinks" onclick="openCity(event, 'rejected')">رفض</button>
+        </div>
+        <div class="tabcontent" id="waiting">
+          <div class="card">
+            <div class="card-body">
+              <div class="userInfo">
+                <div class="info-details">
+                  <div class="img"> <img src="../../assets/courses/user.png" alt=""></div>
+                  <div class="info"> 
+                    <h5 class="card-title">عبدالرحمن فوزي</h5>
+                    <div class="rating"><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="settings">
+                  <button><img src="../../assets/dashboard/settings.svg" alt=""></button>
+                </div>
+              </div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.</p>
+            </div>
           </div>
-          <h5>ادارة محتوي شروط الاستخدام</h5>
-          <hr>
-          <div class="form-group">
-            <label for="conditionStatus">حالة شروط الاستخدام<span class="required text-danger">*</span></label>
-            <select class="form-control" id="conditionStatus">
-              <option>Active</option>
-              <option>InActive</option>
-            </select>
+          <div class="card">
+            <div class="card-body">
+              <div class="userInfo">
+                <div class="info-details">
+                  <div class="img"> <img src="../../assets/courses/user.png" alt=""></div>
+                  <div class="info"> 
+                    <h5 class="card-title">عبدالرحمن فوزي</h5>
+                    <div class="rating"><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="settings">
+                  <button><img src="../../assets/dashboard/settings.svg" alt=""></button>
+                </div>
+              </div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.</p>
+            </div>
           </div>
-          <h5>ادارة محتوي الخصوصية</h5>
-          <hr>
-          <div class="form-group">
-            <label for="conditionStatus">حالة شروط الاستخدام<span class="required text-danger">*</span></label>
-            <select class="form-control" id="conditionStatus">
-              <option>Active</option>
-              <option>InActive</option>
-            </select>
+        </div>
+        <div class="tabcontent" id="accepted">
+          <div class="card">
+            <div class="card-body">
+              <div class="userInfo">
+                <div class="info-details">
+                  <div class="img"> <img src="../../assets/courses/user.png" alt=""></div>
+                  <div class="info"> 
+                    <h5 class="card-title">عبدالرحمن فوزي</h5>
+                    <div class="rating"><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="settings">
+                  <button><img src="../../assets/dashboard/settings.svg" alt=""></button>
+                </div>
+              </div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.</p>
+            </div>
           </div>
-          <h5>ادارة محتوي الملكية الفكرية</h5>
-          <hr>
-          <div class="form-group">
-            <label for="conditionStatus">حالة شروط الاستخدام<span class="required text-danger">*</span></label>
-            <select class="form-control" id="conditionStatus">
-              <option>Active</option>
-              <option>InActive</option>
-            </select>
+        </div>
+        <div class="tabcontent" id="rejected">
+          <div class="card">
+            <div class="card-body">
+              <div class="userInfo">
+                <div class="info-details">
+                  <div class="img"> <img src="../../assets/courses/user.png" alt=""></div>
+                  <div class="info"> 
+                    <h5 class="card-title">عبدالرحمن فوزي</h5>
+                    <div class="rating"><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="settings">
+                  <button><img src="../../assets/dashboard/settings.svg" alt=""></button>
+                </div>
+              </div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.</p>
+            </div>
           </div>
-          <h5>ادارة محتوي من نحن</h5>
-          <hr>
-          <div class="form-group">
-            <label for="englishAddress">العنوان باللغة الانجليزية<span class="required text-danger">*</span></label>
-            <input class="form-control" id="englishAddress" type="text">
+          <div class="card">
+            <div class="card-body">
+              <div class="userInfo">
+                <div class="info-details">
+                  <div class="img"> <img src="../../assets/courses/user.png" alt=""></div>
+                  <div class="info"> 
+                    <h5 class="card-title">عبدالرحمن فوزي</h5>
+                    <div class="rating"><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="settings">
+                  <button><img src="../../assets/dashboard/settings.svg" alt=""></button>
+                </div>
+              </div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.</p>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="arabicAddress">العنوان باللغة العربية<span class="required text-danger">*</span></label>
-            <input class="form-control" id="arabicAddress" type="text">
+          <div class="card">
+            <div class="card-body">
+              <div class="userInfo">
+                <div class="info-details">
+                  <div class="img"> <img src="../../assets/courses/user.png" alt=""></div>
+                  <div class="info"> 
+                    <h5 class="card-title">عبدالرحمن فوزي</h5>
+                    <div class="rating"><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="settings">
+                  <button><img src="../../assets/dashboard/settings.svg" alt=""></button>
+                </div>
+              </div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.</p>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="phone">الهاتف <span class="required text-danger">*</span></label>
-            <input class="form-control" id="phone" type="number">
-          </div>
-          <div class="form-group">
-            <label for="whatsapp">واتساب<span class="required text-danger">*</span></label>
-            <input class="form-control" id="whatsapp" type="number">
-          </div>
-          <div class="form-group">
-            <label for="email">البريد الالكتروني<span class="required text-danger">*</span></label>
-            <input class="form-control" id="email" type="email">
-          </div>
-          <div class="form-group">
-            <label for="facebook">فيسبوك<span class="required text-danger">*</span></label>
-            <input class="form-control" id="facebook" type="text">
-          </div>
-          <div class="form-group">
-            <label for="twitter">تويتر<span class="required text-danger">*</span></label>
-            <input class="form-control" id="twitter" type="text">
-          </div>
-          <div class="form-group">
-            <label for="linkedIn">لينكد ان<span class="required text-danger">*</span></label>
-            <input class="form-control" id="linkedIn" type="text">
-          </div>
-          <div class="form-group">
-            <label for="google">جوجل بلس<span class="required text-danger">*</span></label>
-            <input class="form-control" id="google" type="text">
-          </div>
-          <div class="form-group">
-            <label for="youtube">يوتيوب<span class="required text-danger">*</span></label>
-            <input class="form-control" id="youtube" type="text">
-          </div>
-          <div class="form-group">
-            <label for="instagram">انستجرام<span class="required text-danger">*</span></label>
-            <input class="form-control" id="instagram" type="text">
-          </div>
-          <button class="editContent">تحديث اعدادات الموقع</button>
         </div>
       </div>
     </div>

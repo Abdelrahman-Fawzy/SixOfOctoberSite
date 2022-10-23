@@ -38,6 +38,77 @@ button.primary {
   text-align: right;
 }
 
+.tab {
+  /* Style the buttons inside the tab */
+}
+.tab button.tablinks {
+  background-color: transparent;
+  color: #259F8B;
+  border: 1px solid #259F8B;
+  outline: none;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 5px 16px;
+  margin: 0 10px;
+  transition: 0.3s;
+  font-size: 17px;
+  position: relative;
+  /*Changebackgroundcolorofbuttonsonhover*/
+  /* Create an active/current tablink class */
+}
+.tab button.tablinks:first-of-type {
+  margin: 0;
+}
+.tab button.tablinks:hover {
+  color: #fff;
+  border: 1px solid #259F8B;
+  background-color: #259F8B;
+}
+.tab button.tablinks.active {
+  color: #fff;
+  border: 1px solid #259F8B;
+  background-color: #259F8B;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 0;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+.tabcontent .card {
+  margin-bottom: 1em;
+}
+.tabcontent .card .userInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tabcontent .card .userInfo .info-details {
+  display: flex;
+  gap: 10px;
+}
+.tabcontent .card .userInfo .info-details .img {
+  width: 60px;
+  height: 60px;
+}
+.tabcontent .card .userInfo .info-details .img img {
+  width: 100%;
+}
+.tabcontent .card .userInfo .info-details .info .card-title {
+  font-size: 17px;
+  margin: 0;
+}
+.tabcontent .card .userInfo .info-details .info .rating {
+  margin: 0;
+  margin-top: 5px;
+}
+.tabcontent .card .userInfo .settings button {
+  background: transparent;
+  border: none;
+}
+
 /* Fade in tabs */
 @-webkit-keyframes fadeEffect {
   from {
@@ -115,7 +186,6 @@ button.primary {
   width: calc(100% - 250px);
   min-height: 100%;
   padding: 25px;
-  margin-top: 130px;
 }
 .page .content-area .welcoming .welcomingHeader {
   background-image: url("../../assets/dashboard/welcoming.png");

@@ -19,7 +19,8 @@ button.add svg {
   margin-bottom: 3px;
 }
 
-button.primary {
+button.primary,
+a.primary {
   padding: 5px 25px;
   border-radius: 24px;
   margin: 0 10px;
@@ -27,11 +28,27 @@ button.primary {
   font-weight: 500;
   background-color: #259F8B;
   color: #fff;
+  text-align: center;
+}
+
+button.primary-outline,
+a.primary-outline {
+  padding: 5px 25px;
+  border-radius: 24px;
+  margin: 0 10px;
+  border: 1px solid #259F8B;
+  font-weight: 500;
+  background-color: transparent;
+  color: #259F8B;
+  text-align: center;
 }
 
 .table th {
   background-color: #259F8B;
   color: #fff;
+}
+.table td {
+  border-top: none;
 }
 
 .dropdown-item {
@@ -76,37 +93,6 @@ button.primary {
   padding: 6px 0;
   -webkit-animation: fadeEffect 1s;
   animation: fadeEffect 1s;
-}
-.tabcontent .card {
-  margin-bottom: 1em;
-}
-.tabcontent .card .userInfo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.tabcontent .card .userInfo .info-details {
-  display: flex;
-  gap: 10px;
-}
-.tabcontent .card .userInfo .info-details .img {
-  width: 60px;
-  height: 60px;
-}
-.tabcontent .card .userInfo .info-details .img img {
-  width: 100%;
-}
-.tabcontent .card .userInfo .info-details .info .card-title {
-  font-size: 17px;
-  margin: 0;
-}
-.tabcontent .card .userInfo .info-details .info .rating {
-  margin: 0;
-  margin-top: 5px;
-}
-.tabcontent .card .userInfo .settings button {
-  background: transparent;
-  border: none;
 }
 
 /* Fade in tabs */
@@ -404,6 +390,9 @@ button.primary {
   background-color: #259F8B;
   color: #fff;
 }
+.page .content-area .pageBreadCrumb .pageBreadCrumbActions button.studentsActions::after {
+  display: none;
+}
 .page .content-area .pageBreadCrumb .pageBreadCrumbSearch .form-group {
   display: flex;
   align-items: center;
@@ -471,4 +460,446 @@ button.primary {
   margin: 0 0 30px;
   border-top: 3px solid #67b445;
   width: 50px;
+}
+.page .content-area .pageContent .dropdown.subjects .dropdown-menu.show {
+  padding: 0 0.7em;
+}
+.page .content-area .pageContent .dropdown.subjects .dropdown-menu.show .dropdown-item {
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.page .content-area .pageContent .dropdown.subjects .dropdown-menu.show .dropdown-item:not(:last-child) {
+  border-bottom: 1px solid #707070;
+}
+.page .content-area .pageContent .dropdown.subjects .dropdown-menu.show .dropdown-item a {
+  text-align: center;
+  color: #363636;
+  font-size: 13px;
+  text-decoration: none;
+}
+.page .content-area .pageContent .dropdown.subjects .dropdown-menu.show .dropdown-item a:focus, .page .content-area .pageContent .dropdown.subjects .dropdown-menu.show .dropdown-item a:hover {
+  background-color: #e9ecef;
+  color: #16181b;
+}
+.page .content-area .pageContent .dropdown.subjects .dropdown-menu.show .dropdown-item:hover, .page .content-area .pageContent .dropdown.subjects .dropdown-menu.show .dropdown-item:focus {
+  background-color: transparent;
+}
+.page .content-area .pageContent .dropdown.subjects .dropdown-menu.show .dropdown-item:nth-child(2) a, .page .content-area .pageContent .dropdown.subjects .dropdown-menu.show .dropdown-item:nth-child(3) a {
+  width: 45%;
+}
+.page .content-area .pageContent .dropdown.subjects .dropdown-menu.show .dropdown-item:last-child button {
+  border-radius: 7px;
+}
+.page .content-area .pageContent .dropdown.subjects .dropdown-menu.show .dropdown-item:last-child button a:hover {
+  background-color: transparent;
+}
+.page .content-area .pageContent .dropdown.subjects .dropdown-menu.show .dropdown-item:last-child button:first-child {
+  background-color: #43BE3B;
+  border: 1px solid #43BE3B;
+}
+.page .content-area .pageContent .dropdown.subjects .dropdown-menu.show .dropdown-item:last-child button:nth-child(2) {
+  background-color: #3699E6;
+  border: 1px solid #3699E6;
+}
+.page .content-area .pageContent .dropdown.subjects .dropdown-menu.show .dropdown-item:last-child button:last-child {
+  background-color: #E31717;
+  border: 1px solid #E31717;
+}
+.page .content-area .pageContent .dropdown.tasks .dropdown-item a {
+  display: block;
+  text-align: right !important;
+}
+.page .content-area .pageContent button.download {
+  background: transparent;
+  border: none;
+}
+.page .content-area .pageContent table.trainers td {
+  padding: 5px;
+  vertical-align: middle;
+}
+.page .content-area .pageContent table.trainers td .trainerAndStudent {
+  display: flex;
+  gap: 10px;
+}
+.page .content-area .pageContent table.trainers td .trainerAndStudent img {
+  width: 50px;
+  height: 50px;
+}
+.page .content-area .pageContent table.trainers td .trainerAndStudent .info p {
+  margin: 0;
+  font-size: 17px;
+  padding: 0px;
+}
+.page .content-area .pageContent table.trainers td .trainerAndStudent .info span {
+  font-size: 12px;
+}
+.page .content-area .managementTabs a.primary,
+.page .content-area .managementTabs a.primary-outline {
+  padding: 5px 0px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.page .content-area .card {
+  margin-bottom: 1em;
+}
+.page .content-area .card .userInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .content-area .card .userInfo .info-details {
+  display: flex;
+  gap: 10px;
+}
+.page .content-area .card .userInfo .info-details .img {
+  width: 60px;
+  height: 60px;
+}
+.page .content-area .card .userInfo .info-details .img img {
+  width: 100%;
+}
+.page .content-area .card .userInfo .info-details .info .card-title {
+  font-size: 17px;
+  margin: 0;
+}
+.page .content-area .card .userInfo .info-details .info .rating {
+  margin: 0;
+  margin-top: 5px;
+}
+.page .content-area .card .userInfo .settings button {
+  background: transparent;
+  border: none;
+}
+
+#addNewCourse .modal-header,
+#addNewSubject .modal-header {
+  justify-content: center;
+  border: none;
+  color: #259F8B;
+}
+#addNewCourse .modal-body,
+#addNewSubject .modal-body {
+  padding: 1em 3em;
+}
+#addNewCourse .modal-body form label,
+#addNewSubject .modal-body form label {
+  font-size: 14px;
+  margin-bottom: 0.5em;
+  color: #363636;
+  font-weight: 600;
+}
+#addNewCourse .modal-body form input,
+#addNewCourse .modal-body form textarea,
+#addNewSubject .modal-body form input,
+#addNewSubject .modal-body form textarea {
+  border: none;
+  background-color: #F1F4FA;
+  color: #06152B;
+  font-size: 0.8rem;
+  outline: none;
+  box-shadow: none;
+}
+#addNewCourse .modal-body form textarea,
+#addNewSubject .modal-body form textarea {
+  resize: none;
+}
+#addNewCourse .modal-body form .attchmentsArea,
+#addNewSubject .modal-body form .attchmentsArea {
+  background-color: #FFF;
+  border-radius: 40px;
+  padding: 1em 2em;
+  margin: 1em 0;
+  box-shadow: 3px 3px 10px #d9d9d9, inset 1px 0px 0px #d9d9d9;
+}
+#addNewCourse .modal-body form .attchmentsArea .attachments,
+#addNewSubject .modal-body form .attchmentsArea .attachments {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  margin: 1em 0;
+  background-color: #F4F8FB;
+  border-radius: 24px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='24' ry='24' stroke='%23C5D1E2FF' stroke-width='4' stroke-dasharray='10' stroke-dashoffset='57' stroke-linecap='round'/%3e%3c/svg%3e");
+  border-radius: 24px;
+}
+#addNewCourse .modal-body form .attchmentsArea .attachments .hints p,
+#addNewSubject .modal-body form .attchmentsArea .attachments .hints p {
+  margin: 0;
+  font-size: 20px;
+  color: #636C80;
+  margin-bottom: 10px;
+}
+#addNewCourse .modal-body form .attchmentsArea .attachments .upload label,
+#addNewSubject .modal-body form .attchmentsArea .attachments .upload label {
+  background: #259F8B;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-size: 18px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+#addNewCourse .modal-body form .attchmentsArea .attachments img,
+#addNewSubject .modal-body form .attchmentsArea .attachments img {
+  width: 65px;
+}
+#addNewCourse .modal-footer,
+#addNewSubject .modal-footer {
+  justify-content: center;
+  border: none;
+  padding: 1em 1em 3em;
+}
+#addNewCourse .modal-footer button,
+#addNewSubject .modal-footer button {
+  background-color: #259F8B;
+  color: #fff;
+  border: none;
+  display: block;
+  margin: auto;
+  padding: 7px 3em;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+#addNewContent .modal-header,
+#editSubject .modal-header,
+#answerCheck .modal-header,
+#question .modal-header,
+#marks .modal-header,
+#addAction .modal-header {
+  border: none;
+  font-weight: 500;
+  padding: 1.5em 1.5em 0.5em;
+  color: #259F8B;
+}
+#addNewContent .modal-body,
+#editSubject .modal-body,
+#answerCheck .modal-body,
+#question .modal-body,
+#marks .modal-body,
+#addAction .modal-body {
+  padding: 1rem 1.5rem;
+}
+#addNewContent .modal-body form label,
+#editSubject .modal-body form label,
+#answerCheck .modal-body form label,
+#question .modal-body form label,
+#marks .modal-body form label,
+#addAction .modal-body form label {
+  font-size: 14px;
+  margin-bottom: 0.5em;
+  color: #A1A1A1;
+  font-weight: 600;
+}
+#addNewContent .modal-body form input,
+#addNewContent .modal-body form textarea,
+#editSubject .modal-body form input,
+#editSubject .modal-body form textarea,
+#answerCheck .modal-body form input,
+#answerCheck .modal-body form textarea,
+#question .modal-body form input,
+#question .modal-body form textarea,
+#marks .modal-body form input,
+#marks .modal-body form textarea,
+#addAction .modal-body form input,
+#addAction .modal-body form textarea {
+  border: 1px solid #575757;
+  background-color: transparent;
+  color: #363636;
+  font-size: 0.8rem;
+  outline: none;
+  box-shadow: none;
+}
+#addNewContent .modal-body form textarea,
+#editSubject .modal-body form textarea,
+#answerCheck .modal-body form textarea,
+#question .modal-body form textarea,
+#marks .modal-body form textarea,
+#addAction .modal-body form textarea {
+  resize: none;
+}
+#addNewContent .modal-body form .attchmentsArea,
+#editSubject .modal-body form .attchmentsArea,
+#answerCheck .modal-body form .attchmentsArea,
+#question .modal-body form .attchmentsArea,
+#marks .modal-body form .attchmentsArea,
+#addAction .modal-body form .attchmentsArea {
+  background-color: #FFF;
+  border-radius: 40px;
+  padding: 1em 2em;
+  margin: 1em 0;
+  box-shadow: 3px 3px 10px #d9d9d9, inset 1px 0px 0px #d9d9d9;
+}
+#addNewContent .modal-body form .attchmentsArea .attachments,
+#editSubject .modal-body form .attchmentsArea .attachments,
+#answerCheck .modal-body form .attchmentsArea .attachments,
+#question .modal-body form .attchmentsArea .attachments,
+#marks .modal-body form .attchmentsArea .attachments,
+#addAction .modal-body form .attchmentsArea .attachments {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  margin: 1em 0;
+  background-color: #F4F8FB;
+  border-radius: 24px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='24' ry='24' stroke='%23C5D1E2FF' stroke-width='4' stroke-dasharray='10' stroke-dashoffset='57' stroke-linecap='round'/%3e%3c/svg%3e");
+  border-radius: 24px;
+}
+#addNewContent .modal-body form .attchmentsArea .attachments .hints p,
+#editSubject .modal-body form .attchmentsArea .attachments .hints p,
+#answerCheck .modal-body form .attchmentsArea .attachments .hints p,
+#question .modal-body form .attchmentsArea .attachments .hints p,
+#marks .modal-body form .attchmentsArea .attachments .hints p,
+#addAction .modal-body form .attchmentsArea .attachments .hints p {
+  margin: 0;
+  font-size: 20px;
+  color: #636C80;
+  margin-bottom: 10px;
+}
+#addNewContent .modal-body form .attchmentsArea .attachments .upload label,
+#editSubject .modal-body form .attchmentsArea .attachments .upload label,
+#answerCheck .modal-body form .attchmentsArea .attachments .upload label,
+#question .modal-body form .attchmentsArea .attachments .upload label,
+#marks .modal-body form .attchmentsArea .attachments .upload label,
+#addAction .modal-body form .attchmentsArea .attachments .upload label {
+  background: #259F8B;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-size: 18px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+#addNewContent .modal-body form .attchmentsArea .attachments img,
+#editSubject .modal-body form .attchmentsArea .attachments img,
+#answerCheck .modal-body form .attchmentsArea .attachments img,
+#question .modal-body form .attchmentsArea .attachments img,
+#marks .modal-body form .attchmentsArea .attachments img,
+#addAction .modal-body form .attchmentsArea .attachments img {
+  width: 65px;
+}
+#addNewContent .modal-body form .attchmentsArea .attachments.subjAttachments,
+#editSubject .modal-body form .attchmentsArea .attachments.subjAttachments,
+#answerCheck .modal-body form .attchmentsArea .attachments.subjAttachments,
+#question .modal-body form .attchmentsArea .attachments.subjAttachments,
+#marks .modal-body form .attchmentsArea .attachments.subjAttachments,
+#addAction .modal-body form .attchmentsArea .attachments.subjAttachments {
+  display: block;
+}
+#addNewContent .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList,
+#editSubject .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList,
+#answerCheck .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList,
+#question .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList,
+#marks .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList,
+#addAction .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#addNewContent .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .imgs,
+#editSubject .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .imgs,
+#answerCheck .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .imgs,
+#question .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .imgs,
+#marks .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .imgs,
+#addAction .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .imgs {
+  width: 65px;
+  height: 65px;
+}
+#addNewContent .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .imgs img,
+#editSubject .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .imgs img,
+#answerCheck .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .imgs img,
+#question .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .imgs img,
+#marks .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .imgs img,
+#addAction .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .imgs img {
+  width: 100%;
+  height: 100%;
+}
+#addNewContent .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .addNewImg button,
+#editSubject .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .addNewImg button,
+#answerCheck .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .addNewImg button,
+#question .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .addNewImg button,
+#marks .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .addNewImg button,
+#addAction .modal-body form .attchmentsArea .attachments.subjAttachments .imagesList .addNewImg button {
+  border: none;
+  background: #fff;
+  width: 65px;
+  height: 65px;
+  border-radius: 8px;
+  font-size: 2em;
+}
+#addNewContent .modal-body form .attchmentsArea .attachments.subjAttachments .hints p,
+#editSubject .modal-body form .attchmentsArea .attachments.subjAttachments .hints p,
+#answerCheck .modal-body form .attchmentsArea .attachments.subjAttachments .hints p,
+#question .modal-body form .attchmentsArea .attachments.subjAttachments .hints p,
+#marks .modal-body form .attchmentsArea .attachments.subjAttachments .hints p,
+#addAction .modal-body form .attchmentsArea .attachments.subjAttachments .hints p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+#addNewContent .modal-body form .addAction,
+#editSubject .modal-body form .addAction,
+#answerCheck .modal-body form .addAction,
+#question .modal-body form .addAction,
+#marks .modal-body form .addAction,
+#addAction .modal-body form .addAction {
+  background: transparent;
+  border: none;
+  color: #259F8B;
+  font-weight: 600;
+}
+#addNewContent .modal-body form .addAction img,
+#editSubject .modal-body form .addAction img,
+#answerCheck .modal-body form .addAction img,
+#question .modal-body form .addAction img,
+#marks .modal-body form .addAction img,
+#addAction .modal-body form .addAction img {
+  margin-left: 5px;
+}
+#addNewContent .modal-footer,
+#editSubject .modal-footer,
+#answerCheck .modal-footer,
+#question .modal-footer,
+#marks .modal-footer,
+#addAction .modal-footer {
+  justify-content: center;
+  border: none;
+  padding: 1em 1em 3em;
+}
+#addNewContent .modal-footer button,
+#editSubject .modal-footer button,
+#answerCheck .modal-footer button,
+#question .modal-footer button,
+#marks .modal-footer button,
+#addAction .modal-footer button {
+  background-color: #259F8B;
+  color: #fff;
+  border: none;
+  display: block;
+  margin: auto;
+  padding: 12px 3em;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+#addAction .tablinks {
+  color: #9A9A9A;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  border-radius: 0;
+}
+#addAction .tablinks.active {
+  color: #259F8B;
+  border-bottom: 1px solid #259F8B;
 }

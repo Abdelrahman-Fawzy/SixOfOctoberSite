@@ -7,6 +7,14 @@ $(function () {
     rtl: true,
     dots: true,
   });
+
+  $('.managementTabs').slick({
+    infinite: false,
+    slidesToShow: 6,
+    slidesToScroll: 3,
+    rtl: true,
+    dots: true,
+  });
   var videos_watched = 0;
 
   $(".video_link").on("click", function() {

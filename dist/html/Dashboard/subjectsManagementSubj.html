@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/Dashboard/mainDashboardStyles.css">
     <link rel="stylesheet" href="../../css/whiteNavbar.css">
+    <link rel="stylesheet" href="../../css/libs/slick.css">
+    <link rel="stylesheet" href="../../css/libs/slick-theme.css">
     <title>Dashboard</title>
   </head>
   <body>
@@ -148,43 +150,37 @@
       <div class="content-area">
         <div class="pageBreadCrumb">
           <ul class="breadcrumb">
-            <li><a href="#">إدارة المقررات الدراسية</a></li>
+            <li><a href="subjectsManagement.html">إدارة المقررات الدراسية</a></li>
+            <li>مدخل الى التليفزيون </li>
           </ul>
-          <div class="pageBreadCrumbSearch d-flex">
-            <button class="primary" data-toggle="modal" data-target="#addNewSubject">إضافة مقرر دراسى جديد</button>
+          <div class="pageBreadCrumbActions">
+            <button class="primary" data-toggle="modal" data-target="#addNewContent">+ إضافة محتوى جديد</button>
+            <button class="primary-outline" data-toggle="modal" data-target="#editSubject">تعديل المقرر الدراسي</button>
+          </div>
+          <div class="pageBreadCrumbSearch">
             <div class="form-group"><img src="../../assets/dashboard/search.png" alt="">
               <input class="form-control form-control-sm" type="text" placeholder="بحث">
             </div>
           </div>
         </div>
+        <div class="managementTabs my-5"><a class="primary" href="">نظرة عامة على المقرر الدراسي</a><a class="primary-outline" href="subjectsManagementDepartments.html">الاقسام</a><a class="primary-outline" href="subjectsManagementLessons.html">الدروس</a><a class="primary-outline" href="subjectsManagementAttachments.html">المرفقات</a><a class="primary-outline" href="subjectsManagementQuizes.html">الكويزات</a><a class="primary-outline" href="subjectsManagementTasks.html">المهام</a><a class="primary-outline" href="subjectsManagementQuestions.html">الاسئلة</a><a class="primary-outline" href="subjectsManagementExams.html">الامتحانات</a><a class="primary-outline" href="subjectsManagementRatings.html">التقييمات</a><a class="primary-outline" href="subjectsManagementStudents.html">الطلاب</a><a class="primary-outline" href="subjectsManagementTrainers.html">المدربين</a></div>
         <div class="pageContent">
           <table class="table table-striped">
             <thead>
               <tr>
-                <th scope="col">اسم المقرر الدراسى</th>
-                <th scope="col">الاقسام الدراسية</th>
+                <th scope="col">عنوان المحتوى</th>
+                <th scope="col">الترتيب</th>
                 <th scope="col">تاريخ الاضافة</th>
                 <th scope="col"> </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>مدخل الى التليفزيون </td>
-                <td>صحافة و اعلام - الترم التانى</td>
-                <td>2020-03-02 14:33:36</td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
                 <td> 
-                  <div class="dropdown subjects"><img class="dropdown-toggle" src="../../assets/dashboard/foremore.png" alt="" data-toggle="dropdown" aria-expanded="false">
-                    <div class="dropdown-menu">
-                      <div class="dropdown-item"><a href="subjectsManagementSubj.html">نظرة عامة على المقرر الدراسى</a></div>
-                      <div class="dropdown-item d-flex justify-content-between flex-wrap"><a href="subjectsManagementDepartments.html">الاقسام</a><a href="subjectsManagementQuizes.html">الكويزات</a><a href="subjectsManagementLessons.html">الدروس</a><a href="subjectsManagementTasks.html">المهام</a><a href="subjectsManagementAttachments.html">المرفقات</a><a href="subjectsManagementRatings.html">التقييمات</a></div>
-                      <div class="dropdown-item d-flex justify-content-between flex-wrap"><a href="subjectsManagementStudents.html">الطلاب</a><a href="subjectsManagementTrainers.html">المدربين</a></div>
-                      <div class="dropdown-item d-flex justify-content-between"> 
-                        <button><a href="#"> <img src="../../assets/dashboard/view.png" alt="view"></a></button>
-                        <button>   <a href="#"><img src="../../assets/dashboard/edit.png" alt="view"></a></button>
-                        <button> <a href="#"><img src="../../assets/dashboard/deleteSubject.png" alt="view"></a></button>
-                      </div>
-                    </div>
-                  </div>
+                  <div class="dropdown subjects"><img class="dropdown-toggle" src="../../assets/dashboard/foremore.png" alt="" data-toggle="dropdown" aria-expanded="false"></div>
                 </td>
               </tr>
               <tr>
@@ -208,110 +204,143 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="addNewSubject" tabindex="-1" aria-labelledby="addNewSubjectLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal fade" id="addNewContent" tabindex="-1" aria-labelledby="addNewContentLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="addNewSubjectLabel">إضافة مقر دراسي جديد</h5>
+            <h5 class="modal-title" id="addNewContentLabel">إضافة محتوى جديد</h5>
           </div>
           <div class="modal-body">
             <form> 
+              <div class="form-group">
+                <label for="content">محتوي نظرة عامة</label>
+                <input class="form-control" id="content" type="text" placeholder="Lorem ipsum.">
+              </div>
+              <div class="form-group">
+                <label for="order">الترتيب</label>
+                <input class="form-control" id="order" type="number" placeholder="3">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="button">إضافة نظرة عامة على المقرر الدراسي</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="editSubject" tabindex="-1" aria-labelledby="editSubjectLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editSubjectLabel">تعديل المقرر الدراسي</h5>
+          </div>
+          <div class="modal-body">
+            <form>
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <div class="form-group">
-                    <label for="mainDepartment">القسم الدراسي الرئيسي</label>
-                    <input class="form-control" id="mainDepartment" type="text" placeholder="القسم الدراسي الرئيسي">
+                    <label for="department">القسم الدراسي</label>
+                    <input class="form-control" id="department" type="text" placeholder="Lorem ipsum.">
+                  </div>
+                  <div class="form-group">
+                    <label for="courseName">اسم المقرر الدراسي</label>
+                    <input class="form-control" id="courseName" type="number" placeholder="3">
+                  </div>
+                  <div class="form-group">
+                    <label for="courseDescribtion">وصف قصير (اقصي عدد للحروف - 100 حرف)</label>
+                    <textarea class="form-control" id="courseDescribtion" rows="5" placeholder="التعرف علي مكونات الاستوديو التلفيزيوني و تعلم قواعد التوصير و المونتاج علي برنامج ادوب بريمير"></textarea>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="departmentName">اسم القسم الدراسي</label>
-                    <input class="form-control" id="departmentName" type="text" placeholder="اسم القسم الدراسي">
+                <div class="col-md-6">
+                  <div class="attchmentsArea">
+                    <div class="attachments subjAttachments">
+                      <div class="imagesList">
+                        <div class="imgs"><img src="../../assets/dashboard/img.png" alt="img"></div>
+                        <div class="addNewImg">
+                          <button>+</button>
+                        </div>
+                      </div>
+                      <div class="hints">
+                        <p>صورة المقرر الدراسي * ( 265px × 195px ) gif, jpg, png</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-4">
                   <div class="form-group">
-                    <label for="lang">اللغة</label>
-                    <input class="form-control" id="lang" type="text" placeholder="اللغة">
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="shortDescription">وصف قصير ( اقصي عدد للحروف ١٠٠ حرف)</label>
-                    <input class="form-control" id="shortDescription" type="text" placeholder="وصف قصير ( اقصي عدد للحروف ١٠٠ حرف)">
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="description">وصف المقرر الدراسي</label>
-                    <textarea class="form-control" id="description" rows="3"></textarea>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="introVideo">فيديو المقدمة</label>
-                    <input class="form-control" id="introVideo" type="text" placeholder="فيديو المقدمة">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="lang">اللغة</label>
-                    <input class="form-control" id="lang" type="text" placeholder="اللغة">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="level">المستوي</label>
-                    <input class="form-control" id="level" type="text" placeholder="المستوي">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="code">كود المقرر الدراسي</label>
-                    <input class="form-control" id="code" type="text" placeholder="كود المقرر الدراسي">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="period">المدة</label>
-                    <input class="form-control" id="period" type="text" placeholder="المدة">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="price">السعر : جنية مصري</label>
-                    <input class="form-control" id="price" type="text" placeholder="السعر : جنية مصري">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="status">الحالة</label>
-                    <input class="form-control" id="status" type="text" placeholder="الحالة">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="sugessionSubjects">المقررات الدراسية المقترحة</label>
-                    <input class="form-control" id="sugessionSubjects" type="text" placeholder="المقررات الدراسية المقترحة">
+                    <label for="courseCode">كود المقرر الدراسي</label>
+                    <input class="form-control" id="courseCode" type="number" placeholder="3">
                   </div>
                 </div>
               </div>
-              <div class="attchmentsArea">
-                <div class="attachments">
-                  <div class="hints">
-                    <p>اسحب الملفات او الصور لإرفاقها مع السؤال </p>
-                    <p>رفع صورة القسم * ( 265px × 195px ) gif, jpg, png</p>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="courseDesc">وصف المقرر الدراسي</label>
+                    <textarea class="form-control" id="courseDesc" rows="3" placeholder="التعرف علي مكونات الاستوديو التلفيزيوني و تعلم قواعد التوصير و المونتاج علي برنامج ادوب بريمير"></textarea>
                   </div>
-                  <div class="upload">
-                    <input id="uploadBtn" type="file" hidden>
-                    <label for="uploadBtn">رفع مرفقات من جهازك</label>
-                  </div><img src="../../assets/dashboard/Folder.png" alt="folder">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="introVideo">فيديو المقدمة</label>
+                    <input class="form-control" id="introVideo" type="text" placeholder="&lt;iframe src=&quot;https://drive.google.com/file/d/1hn3ycE6HFQZwZoxph4iky__km0Ws-JCn/preview&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;/iframe&gt;">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="lang">اللغة</label>
+                    <select class="form-control py-0" id="lang">
+                      <option>العربية</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="coursePrice">السعر</label>
+                    <input class="form-control" id="coursePrice" type="number" placeholder="223">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="CourseLevel">المستوي</label>
+                    <select class="form-control py-0" id="CourseLevel">
+                      <option>مبتدئ</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="courseStatus">الحالة</label>
+                    <select class="form-control py-0" id="courseStatus">
+                      <option>مفعل</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="CoursePeriod">المدة</label>
+                    <input class="form-control" id="CoursePeriod" type="number" placeholder="3">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="advisableCourse">مقرر دراسي تنصح به</label>
+                    <select class="form-control py-0" id="advisableCourse">
+                      <option>معطلة</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button class="btn btn-primary" type="button">حفظ و متابعة</button>
+            <button class="btn btn-primary" type="button">تعديل</button>
           </div>
         </div>
       </div>
